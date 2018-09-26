@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def welcome(request):
-    return HttpResponse('this is my photos app')
+    return render(request,'test.html')
