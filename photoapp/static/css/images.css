@@ -2,3 +2,9 @@ h1
 {
   color: red;
 }
+
+
+
+.modal-backdrop.in {
+	opacity: 0.1;
+}

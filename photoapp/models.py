@@ -22,7 +22,7 @@ class Category(models.Model):
         return self.name
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='images/', blank=True)
+    image = models.ImageField(upload_to='images/', default=True)
     name = models.CharField(max_length=30)
     description = HTMLField()
     location=models.ForeignKey(Location,on_delete=models.CASCADE)
