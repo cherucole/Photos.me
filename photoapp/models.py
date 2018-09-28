@@ -12,6 +12,13 @@ class Location(models.Model):
     def save_location(self):
         self.save()
 
+    @classmethod
+    def all_locations(cls):
+        locations=cls.objects.all()
+        return locations
+
+
+
     class Meta:
         ordering = ['name']
 
@@ -42,6 +49,11 @@ class Image(models.Model):
     @classmethod
     def show_by_category(cls, category):
         images = cls.objects.filter(category=category)
+        return images
+
+    @classmethod
+    def show_by_location(cls, location):
+        images = cls.objects.filter(location=location)
         return images
 
     @classmethod

@@ -47,10 +47,40 @@ def search_results(request):
         return render(request, 'images/search.html',{"message":message})
 
 
-def image_category(request):
-    return render(request, 'images/categories.html', {"images":images})
 
 
 
 
+
+# Create your views here.
+def show_locations(request):
+    # categories=Category.all_categories()
+
+    locations = Location.objects.all()
+    images = Image.all_images()
+
+    # imagescategory = Image.show_by_category(category=ca)
+
+
+    if request.GET.get("location"):
+        images = Image.show_by_location(request.GET.get("location"))
+
+    else:
+        images= Image.all_images()
+
+
+
+    # images = Image.objects.all()
+    #
+    # if request.GET.get("category")):
+    #     images = Image.filter_by_category(request.GET.get("category"))
+
+    return render(request, 'images/homepage.html', {"locations":locations, "images":images })
+
+
+def my_locations(request):
+    locations=Location.objects.all()
+    images = Image.all_images()
+
+    return render(request, 'images/homepage.html', {"locations":locations, "images":images })
 
