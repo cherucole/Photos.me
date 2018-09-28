@@ -21,6 +21,11 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    @classmethod
+    def all_categories(cls):
+        categories=cls.objects.all()
+        return categories
+
 class Image(models.Model):
     image = models.ImageField(upload_to='images/', default=True)
     name = models.CharField(max_length=30)
@@ -43,6 +48,8 @@ class Image(models.Model):
     def all_images(cls):
         images = cls.objects.all()
         return images
+
+
 
 
 
