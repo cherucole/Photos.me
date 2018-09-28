@@ -3,6 +3,11 @@ h1
   font-family: 'Dancing Script', cursive;
 }
 
+h2{
+font-family: 'Slabo 27px', serif;
+
+}
+
 
 .modal-backdrop.show {
     opacity: 0.8;

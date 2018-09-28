@@ -4,11 +4,14 @@
 <br>
 
     {% if images%}
-      <h2>Found {{ images|length }} of searched term {{message}}</h2>
+      <h1 style="color:#0d47a1">Found {{ images|length }} images of searched term : {{message}}</h1>
+
     {% else %}
     <br>
 
-      <h2> Found 0 images for the search term {{message}}</h2>
+        <h1 style="color:#0d47a1"> Found 0 images for the search term : {{message}}</h1>
+
+
     {% endif %}
 
 
