@@ -10,7 +10,7 @@
       {% for image in images %}
 
   <div class="card border-secondary">
-    <img class="card-img-top" src="{{image.image.url}}" class="img-responsive" alt="Image" size="100px200">
+    <img class="card-img-top" src="{{image.image.url}}" class="img-responsive" alt="Image" size="100px200" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 
   </div>
       {% empty %}
