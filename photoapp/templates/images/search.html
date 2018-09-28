@@ -2,18 +2,17 @@
 {% block content %}
 <div class="container">
 
-  <div class="row">
     {% if images%}
       <h2>Found {{ images|length }} of searched term {{message}}</h2>
     {% else %}
       <h2> Found 0 images for the search term {{message}}</h2>
     {% endif %}
 
-  </div>
 
-  <div class="row">
 
   {% if images %}
+      <div class="card-columns">
+
     {% for image in images %}  <div class="card border-secondary">
     <img class="card-img-top" src="{{image.image.url}}" class="img-responsive" alt="Image" size="100px200" type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{image.id}}">
 
@@ -39,6 +38,7 @@
     </div>
   </div>
 </div>
+
       {% empty %}
   <div class="row">
     <h2 class="text-center">There is no images here</h2>
@@ -46,6 +46,8 @@
 
     {% endfor %}
   {% endif %}
-  </div>
-</div>
+      </div>
+                </div>
+
+
 {% endblock %}
