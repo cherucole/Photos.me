@@ -17,8 +17,6 @@ class Location(models.Model):
         locations=cls.objects.all()
         return locations
 
-
-
     class Meta:
         ordering = ['name']
 
