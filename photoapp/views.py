@@ -8,6 +8,18 @@ def show_categories(request):
 
     categories = Category.objects.all()
     images = Image.all_images()
+
+    # imagescategory = Image.show_by_category(category=ca)
+
+
+    if request.GET.get("category"):
+        images = Image.show_by_category(request.GET.get("category"))
+
+    else:
+        images= Image.all_images()
+
+
+
     # images = Image.objects.all()
     #
     # if request.GET.get("category")):
@@ -33,6 +45,18 @@ def search_results(request):
     else:
         message = "Please enter a search term"
         return render(request, 'images/search.html',{"message":message})
+
+
+def image_category(request):
+
+
+
+
+
+
+    return render(request, 'images/categories.html', {"images":images})
+
+
 
 
 
