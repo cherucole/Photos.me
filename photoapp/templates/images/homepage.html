@@ -5,6 +5,24 @@
 
 <div class="container">
 
+
+  <div class="card-columns">
+      {% for image in images %}
+
+  <div class="card border-secondary">
+    <img class="card-img-top" src="{{image.image.url}}" class="img-responsive" alt="Image" size="100px200">
+    <div class="card-body">
+      <h5 class="card-title">{{image.name}}</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+      {% endfor %}
+
+  </div>
+
+
+
+
   <!-- Looping through news   -->
   {% for image in images %}
 
