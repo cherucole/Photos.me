@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="052a739e-82ee-4f42-aa83-b4f9a96609b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photoapp/templates/images/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/photoapp/templates/images/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photoapp/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/photoapp/templates/navbar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,14 +42,14 @@
           <entry key="Procfile" value="14" />
           <entry key="css" value="201" />
           <entry key="env" value="12" />
-          <entry key="html" value="1163" />
+          <entry key="html" value="1171" />
           <entry key="py" value="2073" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="201" />
-          <entry key="HTML" value="1163" />
+          <entry key="HTML" value="1171" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="Python" value="2073" />
         </counts>
@@ -144,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photoapp/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -489,8 +487,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photoapp/templates/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
