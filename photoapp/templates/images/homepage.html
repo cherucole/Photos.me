@@ -4,15 +4,11 @@
 {{ block.super}}
 
 <div class="container">
+    {% for category in categories %}
 
- 1111111
-          {% for category in categories %}
-
-    <a href="/?category={{category.id}}"> <button class="btn btn-lg btn-success">      #{{category.name}}</button></a>
+    <a href="/?category={{category.id}}"> <button class="btn btn-lg btn-link">      #{{category.name}}</button></a>
 
           {% endfor %}
-
-
 
 
   <div class="card-columns">
