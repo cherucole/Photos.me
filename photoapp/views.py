@@ -48,12 +48,6 @@ def search_results(request):
 
 
 def image_category(request):
-
-
-
-
-
-
     return render(request, 'images/categories.html', {"images":images})
 
 
