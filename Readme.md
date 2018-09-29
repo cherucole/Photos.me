@@ -38,7 +38,7 @@ Build & Deployment
 **NOTE:** You need to have fully cloned it to run it locally.
 
 
-    $ ./start.sh 
+    $ python3.6 manage.py runserver
 
     # it will launch the web page from local server and fetch 
     blog articles on database provided
