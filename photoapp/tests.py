@@ -35,13 +35,13 @@ class TestImage(TestCase):
         self.assertTrue(len(images) > 0)
 
     def test_show_by_category(self):
-        self.drinks.save()
+        self.office.save()
         images = Image.show_by_category('sports')
         self.assertTrue(len(images) > 0)
 
     def test_view_location(self):
-        self.drinks.save()
-        location = Image.show_by_location(self.nairobi)
+        self.office.save()
+        location = Image.show_by_location(self.diani)
         self.assertTrue(len(location) > 0)
 
 class TestCategories (TestCase):
