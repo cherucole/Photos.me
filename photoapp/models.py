@@ -32,7 +32,7 @@ class Category(models.Model):
         return categories
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='images/', default=True)
+    image = models.ImageField(upload_to='images/', blank=True)
     name = models.CharField(max_length=30)
     description = HTMLField()
     location=models.ForeignKey(Location,on_delete=models.CASCADE)

@@ -11,10 +11,10 @@ class TestImage(TestCase):
         self.office = Image.objects.create(
             name='office', location=self.diani,  description='an office picture')
 
-        self.office.categories.add(self.sports)
-        self.office.categories.add(self.logos)
+        self.office.category.add(self.sports)
+        self.office.category.add(self.logos)
 
-    # def a testcase for instance of the office class
+    # def a testcase for instance of the office class object
     def test_instance(self):
         self.office.save()
         self.assertTrue(isinstance(self.office, Image))
@@ -36,7 +36,8 @@ class TestImage(TestCase):
 
     def test_show_by_category(self):
         self.office.save()
-        images = Image.show_by_category('sports')
+        cat = Category.objects.filter(name='sports')
+        images = Image.show_by_category(cat)
         self.assertTrue(len(images) > 0)
 
     def test_view_location(self):
